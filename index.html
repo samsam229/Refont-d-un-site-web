@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de la communauté de Morlaix">
+    <meta name="author" content="Damien Eloïse Lucas Samy">
+    <!-- Pour adapter sur téléphone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="Icon" href="image/logo_morlaix-coupe.png"/>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script rel="text/javascript" src="js/btn.js" defer></script>
+</head>
+
+<body>
+<div class="btnhaut">
+    <img src="image/icones/arrow-up-solid.svg" class="iconeHaut" alt="Remonter en haut de la page">
+</div>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-green">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="image/logo_morlaix-coupe.png" alt="Logo de la communauté">
+                <span class="text-white ml-2">Morlaix Communauté</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Page_en_construction.html">La Communauté</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Page_en_construction.html">Domaines d'actions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Page_en_construction.html">Les grands projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Page_en_construction.html">Les équipements</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" id="search" placeholder="Rechercher"
+                           onchange="ouvrirPage()" aria-label="Search">
+                    <input class="btn btn-outline-success bg-white text-black" type="button" id="button"
+                           onclick="ouvrirPage()" value="OK">
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="custom-image-container">
+    <video width="1600" height="1020" controls autoplay="autoplay" muted="" loop="loop">
+        <source src="vidéo/MORLAIX_Bretagne.mp4" type=video/mp4>
+    </video>
+</div>
+
+<div class="container mt-4 space-after ">
+    <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-2">
+            <div class="card-style">
+                <a href="Page_en_construction.html" class="card-link">
+                    <img src="image/icones/temple.png" class="logo-card" alt="Logo Batiment Publique">
+                    <p class="font-weight-bold">COMMANDE PUBLIQUE</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+            <div class="card-style">
+                <a href="Page_en_construction.html" class="card-link">
+                    <img src="image/icones/mallette.png" class="logo-card" alt="Logo  Valise">
+                    <p class="font-weight-bold">EMPLOI</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+            <div class="card-style">
+                <a href="Service en ligne.html" class="card-link" target="_blank">
+                    <img src="image/icones/service.png" class="logo-card" alt="Logo Associations">
+                    <p class="font-weight-bold">SERVICES EN LIGNE</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+            <div class="card-style">
+                <a href="Page_en_construction.html" class="card-link">
+                    <img src="image/icones/Bus.png" class="logo-card" alt="Logo Mobilité">
+                    <p class="font-weight-bold">MOBILITÉS ET STATIONNEMENTS</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+            <div class="card-style">
+                <a href="Page_en_construction.html" class="card-link">
+                    <img src="image/icones/Travaux.png" class="logo-card" alt="Logo Travaux">
+                    <p class="font-weight-bold">TRAVAUX</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+            <div class="card-style">
+                <a href="Ltouristique.html" class="card-link" target="_blank">
+                    <img src="image/icones/carte.png" class="logo-card" alt="Logo Sport">
+                    <p class="font-weight-bold">LIEUX TOURISTIQUES</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h3 class="title"> Communauté de Morlaix </h3>
+    <div class="row">
+        <div class="col-sm-3">
+            <p class="ecriture-petit-titre"></p>
+            <div class="list-group">
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action active" aria-current="true">Actualités</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Habiter</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Se déplacer</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Entreprendre</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Visiter</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Grandir</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Aménager durablement</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Trier les déchets</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Etudier</a>
+                <a href="Page_en_construction.html" class="list-group-item list-group-item-action">Vivre ensemble</a>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <p class="ecriture-petit-titre"></p>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="image/actualites/animations_nature_biodiversité.png" class="d-block w-100" alt="Affiche animation biodiversité">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="image/actualites/festival_panoramas.png" class="d-block w-100" alt="festival panorama">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="image/actualites/journee_patrimoine.png" class="d-block w-100" alt="journée du patrimoine">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="image/actualites/les_lignes_de_la_plage.png" class="d-block w-100" alt="les lignes de plage">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="image/actualites/les_rues_en_scenes.png" class="d-block w-100" alt="les reus en scenes">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="image/actualites/MX_art_tour.png" class="d-block w-100" alt="art tours">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p class="ecriture-petit-titre">La carte des communes:</p>
+            <div class="mapdiv">
+
+                <svg height="600" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg"
+                     style="overflow: hidden; position: relative; left: -0.984375px; top: -0.9375px;">
+                    <desc>Created with Raphaël 2.1.0</desc><!--On a pris la carte sur le site de la commune-->
+                    <defs></defs>
+
+                    <a xlink:id="loceguinerstthegonnec" xlink:href="Page_en_construction.html" xlink:title="St-Thégonnec Loc-Eguiner"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M1.3,189.3L5.7,182.4L6.1000000000000005,180.9L6,176.8L0,168.5L2.6,165.1L3,161.2L6.8,156.5L7.3999999999999995,152.2L16.099999999999998,141.29999999999998L15.999999999999998,134.79999999999998L28.4,122.49999999999999L28.5,112.79999999999998L32.8,106.69999999999999L34.599999999999994,114.79999999999998L37.099999999999994,119.69999999999999L40.39999999999999,135L35.599999999999994,138.4L30.099999999999994,155.4L39.89999999999999,166.6L40.29999999999999,176.2H38.19999999999999L36.39999999999999,175L31.999999999999993,174.8L29.199999999999992,176.8V183.4L26.89999999999999,185.9L23.29999999999999,182.70000000000002L20.59999999999999,183.60000000000002L20.79999999999999,185.60000000000002L24.19999999999999,191.20000000000002L23.899999999999988,193.00000000000003L16.599999999999987,202.60000000000002L12.899999999999988,199.60000000000002L9.2,199L8.7,200.7L1.3,189.3"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;">
+                        </path>
+                    </a>
+
+                    <a xlink:id="plouneourmenez" xlink:href="Page_en_construction.html" xlink:title="Plounéour-Menez"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M17.2,203.8L25.299999999999997,193.9L25.599999999999998,190.5L22.299999999999997,184.1L22.799999999999997,183.9L27.099999999999998,188.3L31.099999999999998,187.9L45.5,179.20000000000002L58.5,178.20000000000002L65.1,183.60000000000002L70.69999999999999,186.10000000000002H73.79999999999998L75.29999999999998,189.8L74.89999999999998,193.4L66.89999999999998,203.4L66.79999999999998,205.1L71.89999999999998,214.1L67.29999999999998,215.1L58.29999999999998,221L46.59999999999998,222.6L27.09999999999998,230.7L24.49999999999998,216.2L17.2,203.8Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="taule" xlink:href="Page_en_construction.html" xlink:title="Taulé" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M38.1,118.3L35.6,113.6L33.300000000000004,104.6L35,102L34.8,99.6L27.599999999999998,93.3L26.9,89.8L27.599999999999998,83.2L33.199999999999996,84.8L39.3,75.39999999999999L41.5,72.99999999999999L45.9,71.49999999999999L51.1,66.79999999999998L53,67.89999999999998L54.9,68.09999999999998L58.699999999999996,65.69999999999997L62.99999999999999,67.79999999999997L66.5,70.99999999999997L63.2,73.39999999999998L59.400000000000006,73.89999999999998L58.60000000000001,75.49999999999997L58.80000000000001,78.39999999999998L61.20000000000001,80.89999999999998L66.00000000000001,82.39999999999998L65.30000000000001,83.49999999999997L65.4,88.79999999999997L61.50000000000001,90.79999999999997L57.70000000000001,96.99999999999997L56.70000000000001,105.49999999999997L52.00000000000001,105.69999999999997L48.900000000000006,108.89999999999998L45.00000000000001,110.89999999999998L38.1,118.3Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="henvic" xlink:href="Page_en_construction.html" xlink:title="Henvic" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M27.5,81.3L32.3,82.89999999999999L37.599999999999994,74.8L40.49999999999999,71.5L44.89999999999999,70L49.89999999999999,65.7L41.49999999999999,62.6L33.699999999999996,62L29.499999999999996,55.8L27.899999999999995,52L23.8,56L27.5,62.8L24.9,69.7L24.7,75.8L27.5,81.3Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="steseve" xlink:href="Page_en_construction.html" xlink:title="Ste-Sève" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M38.7,119.8L46,112L49.6,110.2L52.800000000000004,107.10000000000001L56.6,106.9L56,111L54.8,114.2L55.199999999999996,116.10000000000001L58.9,122.60000000000001V124.2L55.1,129.3L48.300000000000004,133.5L47.50000000000001,129.9L45.800000000000004,130.1L41.6,133.9L38.7,119.8Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="pleyberchrist" xlink:href="Page_en_construction.html" xlink:title="Pleyber-Christ"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M27.4,186.7L30.299999999999997,183.6L30.4,177.5L32.199999999999996,175.9L35.9,176.1L37.9,177.6L41.699999999999996,177.29999999999998L41,166L31.7,155L36.5,139.2L41.6,135.5L46.300000000000004,131.4L47.400000000000006,135.6L55.00000000000001,131.1L58.300000000000004,133.2L60.400000000000006,133.1L64.10000000000001,130.29999999999998L65.2,135.2L67.3,135.1L71.8,130.7H73.6L76,134L76.2,138.4L70.2,151L69.8,158.8L72.6,173.3L73.6,184.70000000000002L70.69999999999999,184.3L66.19999999999999,182.5L59.29999999999999,176.7L44.89999999999999,177.79999999999998L30.09999999999999,186.49999999999997L27.4,186.7Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="plourinlesmorlaix" xlink:href="Page_en_construction.html" xlink:title="Plourin lès Morlaix"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M74.2,174.6L73.10000000000001,170L71.2,158.4L71.4,151L77.30000000000001,138.6L77.10000000000001,133.5L74.50000000000001,129.4L73.40000000000002,129.20000000000002L73.80000000000003,122.20000000000002L74.30000000000003,119.10000000000002L76.80000000000003,119.40000000000002L78.80000000000003,120.30000000000003L82.60000000000002,116.90000000000002L85.50000000000003,122.10000000000002L89.90000000000003,123.00000000000003L104.10000000000004,142.80000000000004L104.20000000000003,143.80000000000004L102.60000000000004,148.80000000000004L102.50000000000004,152.80000000000004L104.40000000000005,157.80000000000004L106.80000000000005,160.40000000000003L106.60000000000005,162.90000000000003L105.40000000000005,171.40000000000003L104.90000000000005,175.90000000000003L102.00000000000004,176.80000000000004L98.40000000000005,181.90000000000003L96.40000000000005,182.10000000000002L88.40000000000005,175.10000000000002H86.50000000000004L82.70000000000005,178.00000000000003L79.80000000000004,177.90000000000003L74.2,174.6Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="stmartindeschamps" xlink:href="Page_en_construction.html" xlink:title="St-Martin-des-Champs"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M56.1,130L60.2,124.4L60.1,122.2L56.6,115.7L56,114.4L57.1,111.30000000000001L58.9,97.60000000000001L62.199999999999996,91.9L66.3,90L73.39999999999999,98.9L74.1,104.5L73.8,113.8L72.2,122.8L71.8,129.2L66.39999999999999,133.79999999999998L64.69999999999999,128.2L59.89999999999999,131.89999999999998H58.19999999999999L56.1,130Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="morlaix" xlink:href="index.html" xlink:title="Morlaix" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M74.4,117.3L75,113.3L75.3,104.1L74.6,98.1L66.8,88.39999999999999L66.6,84.49999999999999L71.8,75.09999999999998L87.8,75.19999999999997L93,79.29999999999997L93.2,85.19999999999997L100,95.89999999999998L99.9,99.89999999999998L95.4,104.49999999999997L95.5,110.19999999999997L92.6,112.69999999999997L90.6,111.39999999999998L87,111L85,112.2L89.4,119.4L89.7,121.2L86.2,120.7L82.9,114.8L81.5,115L78.1,118.4L76.6,117.9L74.4,117.3Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="locquenole" xlink:href="Page_en_construction.html" xlink:title="Locquénolé" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M60.1,77.6L59.7,75.8L63.6,74.5L67.5,72.2L69.1,75.10000000000001L69.3,76.4L66.6,81.2L61.699999999999996,79.5L60.1,77.6Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="carantec" xlink:href="Page_en_construction.html" xlink:title="Carantec" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M28.8,51.3L30.2,54.9L34.4,61.1L41.4,61.7L49.8,65L53.099999999999994,67.1L54.3,67.3L57.199999999999996,65.5L52.99999999999999,62.2L49.199999999999996,57.7L46.599999999999994,52.1L46.49999999999999,47.5L54.69999999999999,43.6L45.69999999999999,42.800000000000004L40.59999999999999,39.7L39.19999999999999,39.5L36.69999999999999,47.7L33,51.4L28.8,51.3Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="plouezoch" xlink:href="Page_en_construction.html" xlink:title="Plouezoc'h" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M97.3,89L94.2,84.3L94,78.9L88,73.9L72.4,73.7L70.7,68.4L69.5,47.300000000000004L66.4,45V40.3L70.4,43.9L70.5,47.699999999999996L82,62.3L87.1,62.699999999999996L96.3,69.6L107.39999999999999,72.19999999999999L110.3,73.79999999999998L110.2,76.99999999999999L108.10000000000001,80.19999999999999L103.7,82.69999999999999L100.3,87.1L97.3,89Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="garlan" xlink:href="Page_en_construction.html" xlink:title="Garlan" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M98,90.5L101.4,88.2L104.7,83.8L109.2,81.1L114.10000000000001,80.5L117.2,77.7H118.2L119.2,81.60000000000001L119,86.60000000000001L116.4,94.4L116.5,100.5L117,103.7L103.8,109.10000000000001L96.7,109.50000000000001V105.10000000000001L101.10000000000001,100.4V95.5L98,90.5Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="stjeandudoigt" xlink:href="Page_en_construction.html" xlink:title="St-Jean-du-Doigt"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M110.6,79.2L111.69999999999999,76.8L111.79999999999998,72.8L108.09999999999998,70.7L102.99999999999999,69.10000000000001L103.19999999999999,63.50000000000001L102.69999999999999,59.300000000000004L108.29999999999998,50.60000000000001L107.79999999999998,42.30000000000001L106.89999999999998,37.500000000000014L109.99999999999997,33.600000000000016L110.49999999999997,28.100000000000016L109.19999999999997,23.800000000000015L117.89999999999998,20.100000000000016L121.69999999999997,20.200000000000017L121.89999999999998,30.500000000000018L124.39999999999998,33.100000000000016L124.79999999999998,36.40000000000001L124.19999999999999,43.90000000000001L118.6,50.600000000000016L118.5,55.30000000000002L120.2,57.600000000000016L116.60000000000001,67.20000000000002V70.40000000000002L117.7,73.00000000000001L117.3,75.00000000000001L113.39999999999999,79.00000000000001L110.6,79.2Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="plougasnou" xlink:href="Page_en_construction.html" xlink:title="Plougasnou" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M101.4,68.8L101.60000000000001,63.4L100.7,58.9L106.7,49.8L106.3,42.199999999999996L105.2,36.8L108.5,32.599999999999994L108.6,27.799999999999994L107.39999999999999,24.099999999999994L100.1,17.199999999999996L99.5,13.999999999999996L93.6,13.399999999999997L90.7,11L90,16.9L87.5,21.599999999999998L85.3,18.2L85,12.9L79.2,19L78.60000000000001,23.2L73.60000000000001,28.7L74.30000000000001,34.7L75.00000000000001,51.400000000000006L82.50000000000001,61.00000000000001L87.50000000000001,61.20000000000001L96.80000000000001,68.30000000000001L101.4,68.8Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="lanmeur" xlink:href="Page_en_construction.html" xlink:title="Lanmeur" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M118.2,75.7L119.4,72.60000000000001L117.80000000000001,69.9L117.9,67.10000000000001L121.7,57.400000000000006L119.9,54.60000000000001L120,51.00000000000001L125.6,44.300000000000004L129.6,51.7L130.2,57.1L131.79999999999998,59.9L133.79999999999998,59.8L139.99999999999997,53.699999999999996H143.29999999999998L150.49999999999997,60.99999999999999L150.29999999999998,63.89999999999999L149.29999999999998,66.1L140.7,73.89999999999999L139.5,76.19999999999999L139.7,78.69999999999999L142.29999999999998,82.1L142.39999999999998,84.19999999999999L141.2,85.79999999999998V87.79999999999998L138.6,89.99999999999999L134.7,88.39999999999999L131.1,88.49999999999999L125.1,90.99999999999999L121.39999999999999,91.09999999999998L119.19999999999999,89.59999999999998L120.1,86.89999999999998L120.5,81.59999999999998L119.2,76.69999999999997L118.2,75.7Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="plouigneau" xlink:href="Page_en_construction.html" xlink:title="Plouigneau" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M119,91L121.3,92.7L125.5,92.60000000000001L131.6,90.00000000000001L134.5,89.90000000000002L138.4,91.60000000000002L142.6,88.80000000000003L147.5,91.50000000000003L147.4,93.30000000000003L147,100.20000000000003L150.1,103.50000000000003L158.6,105.70000000000003L163.9,108.40000000000003L168.20000000000002,105.80000000000004L168.10000000000002,107.50000000000004L164.50000000000003,112.20000000000005L163.90000000000003,116.40000000000005L166.60000000000002,125.50000000000004L167.50000000000003,127.40000000000005L169.20000000000002,129.20000000000005L168.70000000000002,132.10000000000005L162.4,140.40000000000006L155.1,148.20000000000007L154.2,152.50000000000009L151.5,154.20000000000007L148.2,150.60000000000008L141,150.20000000000007L131.7,137.50000000000009L125.6,125.90000000000009L123.3,124.6000000000001L104.6,122.90000000000009L97.89999999999999,119.70000000000009L90.69999999999999,119.30000000000008L86.89999999999999,112.80000000000008L87.49999999999999,112.40000000000008L90.69999999999999,112.60000000000008L92.89999999999999,114.30000000000008L96.69999999999999,111.00000000000009L104.29999999999998,110.80000000000008L118.89999999999998,104.50000000000009L118.29999999999998,98.10000000000008L118.39999999999998,94.20000000000007L119,91Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="plougonven" xlink:href="commune.html" xlink:title="Plougonven" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M90.7,120.6L97.3,120.8L103.8,124.2L122.5,125.7L124.2,126.7L130.3,138L139.60000000000002,150.9L136.90000000000003,154.70000000000002L137.30000000000004,157.8L141.60000000000005,162.3L140.00000000000006,164.4L140.20000000000005,172.20000000000002L144.70000000000005,176.9L142.90000000000003,179.1L143.00000000000003,183.29999999999998L145.30000000000004,188.2L145.70000000000005,195.79999999999998L137.90000000000003,203.89999999999998L135.60000000000002,203.99999999999997L133.50000000000003,202.49999999999997L131.50000000000003,202.59999999999997L126.70000000000003,206.59999999999997H124.60000000000004L123.30000000000004,205.89999999999998L106.80000000000004,205.79999999999998L108.50000000000004,183.29999999999998L104.70000000000005,178.79999999999998L104.60000000000005,177.29999999999998L105.80000000000005,175.99999999999997L107.60000000000005,160.09999999999997L105,157L103.4,152.5L103.60000000000001,148.1L105.2,144.1V142.29999999999998L90.5,122.59999999999998L90.7,120.6Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="plouegatguerrand" xlink:href="Page_en_construction.html" xlink:title="Plouégat-Guerrand"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M169.2,94.3L163.89999999999998,94.2L159.09999999999997,64.2L151.99999999999997,61.6L151.49999999999997,64.2L150.49999999999997,67.10000000000001L140.79999999999998,76.00000000000001L140.99999999999997,78.00000000000001L143.69999999999996,81.40000000000002L143.89999999999995,84.30000000000003L142.39999999999995,86.00000000000003L142.49999999999994,87.10000000000002L148.69999999999993,90.80000000000003L148.09999999999994,99.30000000000003L150.69999999999993,102.10000000000002L159.19999999999993,104.40000000000002L163.89999999999992,106.60000000000002L167.69999999999993,104.30000000000003L167.09999999999994,97.80000000000003L169.2,94.3Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="guimaec" xlink:href="Page_en_construction.html" xlink:title="Guimaëc" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M159.3,62.9L151.5,59.8L144.3,52.3L139.4,52.099999999999994L133.5,57.99999999999999L131.7,56.199999999999996L131,50.8L126.1,41.9L126.19999999999999,32.599999999999994L123.39999999999999,29.699999999999996L123.3,20.299999999999997L138.2,24.699999999999996L138.7,28.399999999999995L139.6,31.099999999999994L143.9,34.39999999999999L143,40L143.1,44.9L144.9,46.1L147.8,45.9L152.9,41.6L154.6,41.7L156.4,47.800000000000004L165,55.400000000000006L159.3,62.9Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="lanneanou" xlink:href="Page_en_construction.html" xlink:title="Lannéanou" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M138.4,155.1L140.9,151.5L147.4,151.9L150.8,155.6L154.60000000000002,153.79999999999998L155.8,157.1L153.10000000000002,160.2L153.20000000000002,163.29999999999998L160.50000000000003,172.7L162.10000000000002,177.2V179L157.8,184.1L159.10000000000002,190.5L154.8,193.9L151.70000000000002,195.1L146.8,195.5L146.4,187.7L144,182.7V179.39999999999998L146.6,176.7L141.29999999999998,171.39999999999998L141.2,164.7L143,162L138.3,157.1L138.4,155.1Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="botsorhel" xlink:href="Page_en_construction.html" xlink:title="Botsorhel" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M160.6,190.2L159.29999999999998,184.2L163.6,179.2L163.4,176.7L161.8,171.89999999999998L154.70000000000002,162.29999999999998V160.49999999999997L157.9,157.09999999999997L155.6,152.39999999999998L156.29999999999998,148.7L168.1,135.5L169.9,138.8L170.1,145L172.7,149L173.29999999999998,155.7L171.99999999999997,158.79999999999998V160.79999999999998L181.89999999999998,173.99999999999997L177.59999999999997,175.99999999999997L177.79999999999995,178.29999999999998L177.99999999999994,186.99999999999997L177.29999999999995,188.69999999999996L179.89999999999995,192.49999999999997L179.29999999999995,193.79999999999998L176.39999999999995,194.2L173.69999999999996,197.5L172.59999999999997,200.2L168.59999999999997,196.39999999999998L167.09999999999997,193.09999999999997L163.99999999999997,191.49999999999997L160.6,190.2Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="guerlesquin" xlink:href="Page_en_construction.html" xlink:title="Guerlesquin" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M182.9,173.7L173.20000000000002,160.6V158.79999999999998L174.50000000000003,155.89999999999998L173.90000000000003,148.49999999999997L171.70000000000005,144.99999999999997L180.80000000000004,140.59999999999997L181.70000000000005,136.59999999999997L183.80000000000004,134.49999999999997L187.80000000000004,136.19999999999996H193.30000000000004L196.60000000000005,133.69999999999996L197.60000000000005,134.19999999999996L200.40000000000006,141.09999999999997L204.80000000000007,145.49999999999997L209.90000000000006,149.99999999999997L197.70000000000007,160.19999999999996L185.10000000000008,173.29999999999995L182.9,173.7Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="lecloitrestthegonnec" xlink:href="Page_en_construction.html" xlink:title="Le Cloître - St Thégonnec"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M78.7,219.4L68.2,204.4L76.4,193.5L76.60000000000001,189.1L75.00000000000001,184.9L73.90000000000002,175.9L79.90000000000002,179.3H83.00000000000001L87.10000000000001,176.20000000000002L96.2,183.60000000000002L98.5,183.3L103.1,177.9L103.6,179.70000000000002L106.89999999999999,183.60000000000002L105.3,206.10000000000002L81.3,213.3V219.5H78.7Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="locquirec" xlink:href="Page_en_construction.html" xlink:title="Locquirec" xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M145.2,34.3L144.29999999999998,40.099999999999994V44.3L145.79999999999998,44.9L147.49999999999997,44.5L152.19999999999996,40.3L155.49999999999997,40.4L157.79999999999998,47.1L166.1,54.300000000000004L172.29999999999998,48.900000000000006L166.89999999999998,42.2L172.39999999999998,36.300000000000004V33.800000000000004L165.49999999999997,32.300000000000004L156.19999999999996,38.7L152.99999999999997,38.300000000000004L150.09999999999997,34.7L145.2,34.3Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+
+                    <a xlink:id="plouegatmoysan" xlink:href="Page_en_construction.html" xlink:title="Plouégat-Moysan"
+                       xlink:active="true">
+                        <path fill="#e5dabe" stroke="#666666"
+                              d="M168.8,108.4L165.60000000000002,112.4C165.60000000000002,112.4,165.00000000000003,115.80000000000001,165.10000000000002,116.2C165.20000000000002,116.60000000000001,167.70000000000002,124.9,167.70000000000002,124.9L170.8,128.70000000000002L170.20000000000002,132.3L169.10000000000002,134L171.40000000000003,138.3L171.50000000000003,143.70000000000002L179.70000000000002,139.3L180.60000000000002,135.9L187.10000000000002,129.3L191.8,123.70000000000002L192.5,119.40000000000002L191.2,117.00000000000001L189.1,114.10000000000001L183.6,111.50000000000001L172.6,110.90000000000002L168.8,108.4Z"
+                              stroke-width="0.5" stroke-linejoin="round" stroke-opacity="1"
+                              transform="matrix(1.6434,0,0,1.6434,0,8.2757)"
+                              style="stroke-linejoin: round; stroke-opacity: 1; cursor: pointer;"></path>
+                    </a>
+                </svg>
+
+                <circle cx="302.6" cy="1147.4" id="0"></circle>
+                <circle cx="616.8" cy="745.3" id="1"></circle>
+                <circle cx="149.2" cy="439.8" id="2"></circle>
+
+            </div>
+        </div>
+
+        <div class="col-sm-3" id="agenda">
+            <p class="ecriture-petit-titre"></p>
+            <div class="row">
+                <h2>Agenda</h2>
+            </div>
+
+            <div class="row info">
+                <h5>16/10/2023</h5>
+                <p class="border-left-5  border-danger">À compter de cette date, les déchèteries fermeront à 17h au lieu
+                    de 18h. L'aire de déchets verts de Kérolzec (à St-Martin-Des-Champs) fermera également tous les jours à 17h.
+                    Le samedi elle sera ouverte uniquement l'après midi de 13h45 à 17h (fermée le samedi matin). <br>
+                    <a id="lireplus1" href="#nogo" onclick="afficherLireLaSuite('lirelasuite1', 'lireplus1')">Lire la suite...<br></a></p>
+
+                <p id="lirelasuite1" style="display: none;"> Attention, afin de permettre le vidage des remorques et le
+                nettoyage des sites, les déchèteries ferment leurs portes au public 5 minutes avant les horaires indiqués.
+                <a href="javascript:masquerLireLaSuite('lirelasuite1', 'lireplus1')"><br><ion-icon name="remove"></ion-icon></a></p>
+                <a class="card-link" target="_blank" href="https://www.morlaix-communaute.bzh/var/intranet/storage/images/morlaix-communaute/reduire-trier-les-dechets/actualites/les-decheteries-passent-a-l-heure-d-hiver-ce-lundi-16-octobre/4325589-3-fre-FR/Les-decheteries-passent-a-l-heure-d-hiver-ce-lundi-16-octobre_article_main.png">Horaires des déchèteries</a>
+            </div>
+
+            <div class="row info">
+                <h5>13/10/2023</h5>
+                <p class="border-left  border-danger">Le tout nouveau programme des animations nature et biodiversité
+                    est sorti. Des landes de Guernélohet à la Manufacture des tabacs de Morlaix, partez à la découverte de la faune et
+                    la flore d'exception du territoire. <br> <a id="lireplus2" href="#nogo" onclick="afficherLireLaSuite('lirelasuite2', 'lireplus2')">Lire la suite...</a></p>
+
+                <p id="lirelasuite2" style="display: none;">Parmi les 9 animations proposées dans le cadre du programme
+                Trame verte et bleue porté par Morlaix Communauté, vous trouverez forcément chaussure à votre pied !
+                <a href="javascript:masquerLireLaSuite('lirelasuite2', 'lireplus2')"><u><br><ion-icon name="remove"></ion-icon></u></a></p>
+                <a class="card-link" target="_blank" href="https://www.morlaix-communaute.bzh/community/showPDF/372364/4072576/version/1/file/Trame+verte+et+bleue-7.pdf">Animations Nature & Biodiversité</a>
+            </div>
+
+            <div class="row info">
+                <h5>1/09/2023</h5>
+                <p class="border-left  border-danger">Vous avez un projet de création, de reprise, de développement
+                    d’entreprise ? Vous êtes à la recherche d’un bureau, d’un local commercial ou artisanal, d’un
+                    terrain à bâtir ? <br> <a id="lireplus3" href="#nogo" onclick="afficherLireLaSuite('lirelasuite3', 'lireplus3')">Lire la suite...</a></p>
+
+                <p id="lirelasuite3" style="display: none;">Parcourez notre nouveau livret des aides et dispositifs possibles et prenez contact avec le pôle économie !
+                <a href="javascript:masquerLireLaSuite('lirelasuite3', 'lireplus3')"><u><br><ion-icon name="remove"></ion-icon></u></a></p>
+                <a class="card-link" target="_blank" href="https://www.morlaix-communaute.bzh/community/showPDF/347503/3780443/version/1/file/23020-plaquette-economique-12pages-WEB-100523.pdf">Votre projet d’implantation à Morlaix Communauté</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+<div class="Toutfooter">
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link"
+                                             href="https://consent.youtube.com/m?continue=https%3A%2F%2Fwww.youtube.com%2Fuser%2FmorlaixFR%2Ffeed%3Fcbrd%3D1&gl=FR&m=0&pc=yt&cm=2&hl=fr&src=1"
+                                             target="blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Morlaix_Attract"
+                                             target="blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link"
+                                             href="https://www.linkedin.com/company/morlaix-attractivite/"
+                                             target="blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link"
+                                             href="https://www.facebook.com/MorlaixCommunauteOfficiel/" target="blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Données personnelles</a></li>
+            <li class="menu__item"><a class="menu__link"
+                                      href="https://www.demarches-simplifiees.fr/commencer/4b2693bc-0e68-4050-81f7-7c6cfb080038"
+                                      target="_blank">Formulaire de contact</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Mentions légales</a></li>
+        </ul>
+        <p>&copy;2023 Damien | Eloïse | Samy | Lucas | </p>
+    </footer>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function afficherLireLaSuite(idLireLaSuite, idLirePlus) {
+        document.getElementById(idLireLaSuite).style.display = 'block';
+        document.getElementById(idLirePlus).style.display = 'none';
+    }
+
+    function masquerLireLaSuite(idLireLaSuite, idLirePlus) {
+        document.getElementById(idLireLaSuite).style.display = 'none';
+        document.getElementById(idLirePlus).style.display = 'block';
+    }
+</script>
+<style>
+    @media screen and (min-width: 576px) and (max-width: 777px) {
+        .mapdiv {
+            width: 25%;
+            margin-left: -40%;
+        }
+    }
+    @media screen and (min-width: 777px) and (max-width: 990px) {
+        .mapdiv {
+            width: 25%;
+            margin-left: -20%;
+        }
+    }
+</style>
+</html>

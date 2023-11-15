@@ -1,0 +1,93 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+    /*padding: 0;
+    margin: 0;
+    box-sizing: border-box;*/
+  }
+.title {
+    font-size: 3.5rem;
+    color: #031f73;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaflet-control-zoom-out{
+    z-index: 40;
+}
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+/*Lire la suite du texte - page commune*/
+.accordion-body a:hover {
+    text-decoration: underline;
+    color: #031f73;
+}
+
+.accordion-body a{
+    color: #031f73;
+
+
+}
+/*Texte en dessous de Nos contact - page commune*/
+.cart a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*formulaire de contact à côté de la carte - page commune*/
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #031f73;
+    box-shadow: 0 0 15px #af0606;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Titre de formulaire de contact - page commune*/
+.contact {
+   /* padding: 30px 60px;*/
+    padding: 10px 25px;
+    color: white;
+}
+/*Titre de formulaire de contact - page commune*/
+h1 {
+    margin-bottom: 10px;
+}
+/*Texte du formulaire de contact - page commune*/
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+/*Espacement texte formulaire de contact - page commune*/
+.contact-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+/*Icone formulaire de contact - page commune*/
+ion-icon {
+    margin-right: 15px;
+}
+/*Map - page commune*/
+#map {
+    height: 400px;
+    flex: 1;
+}
+.menu a{
+    color: white;
+
+}
+.menu a:hover{
+    color: white;
+
+}
+

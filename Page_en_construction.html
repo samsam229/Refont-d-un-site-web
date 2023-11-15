@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Site de la communauté de Morlaix">
+  <meta name="author" content="Damien Eloïse Lucas Samy">
+  <!-- Pour adapter sur téléphone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page en Construction</title><link rel="Icon" href="image/logo_morlaix-coupe.png"/>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Erreur.css">
+  <script rel="text/javascript" src="js/btn.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-green">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="image/logo_morlaix-coupe.png" alt="Logo de la communauté">
+        <span class="text-white ml-2">Morlaix Communauté</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Page_en_construction.html">La Communauté</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Page_en_construction.html">Domaines d'actions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Page_en_construction.html">Les grands projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Page_en_construction.html">Les équipements</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+
+
+          <input class="form-control me-2" type="search" id="search" placeholder="Rechercher"
+                 onchange="ouvrirPage()" aria-label="Search">
+
+          <input class="btn btn-outline-success bg-white text-black" type="button" id="button"
+                 onclick="ouvrirPage()" value="OK">
+
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="erreur">
+  <h2>Désolé ! La page est actuellement en construction <br> Elle sera terminée dans : </h2>
+  <div class="countdown_T">
+    <div id="time">
+      <div class="circle" style="--clr:#2abdea">
+        <div class="dots day_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="dd"></circle>
+        </svg>
+        <div id="days">00<br><span>Days</span></div>
+      </div>
+      <div class="circle" style="--clr:#05206f">
+        <div class="dots hr_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="hh"></circle>
+        </svg>
+        <div id="hours">00</div>
+      </div>
+      <div class="circle" style="--clr:#a80d0a">
+        <div class="dots min_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="mm"></circle>
+        </svg>
+        <div id="minutes">00</div>
+      </div>
+      <div class="circle" style="--clr:#025758">
+        <div class="dots sec_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="ss"></circle>
+        </svg>
+        <div id="seconds">00</div>
+      </div>
+    </div>
+    <script>
+      let days = document.getElementById('days');
+      let hours = document.getElementById('hours');
+      let minutes = document.getElementById('minutes');
+      let seconds = document.getElementById('seconds');
+
+      let dd = document.getElementById('dd');
+      let hh = document.getElementById('hh');
+      let mm = document.getElementById('mm');
+      let ss = document.getElementById('ss');
+
+      let day_dot = document.querySelector('.day_dot');
+      let hr_dot = document.querySelector('.hr_dot');
+      let min_dot = document.querySelector('.min_dot');
+      let sec_dot = document.querySelector('.sec_dot');
+      let endDate = '12/24/2023 00:00:00';
+      //format de la date  mois/jours/année
+      let x = setInterval(function () {
+
+        let now = new Date(endDate).getTime();
+        let countDown = new Date().getTime();
+        let distance = now - countDown;
+
+        // Calcul du temps restant en jours, heures et secondes
+
+        let d = Math.floor(distance / (1000 * 60 * 60 *
+                24));
+        let h = Math.floor((distance % (1000 * 60 * 60 *
+                24)) / (1000 * 60 * 60));
+        let m = Math.floor((distance % (1000 * 60 *
+                60)) / (1000 * 60));
+        let s = Math.floor((distance % (1000 * 60)) / (1000));
+
+        // Affichons le résultat dans les éléments avec un identifiant
+        days.innerHTML = d + "<br><span>Jours</span>";
+        hours.innerHTML = h + "<br><span>Heures</span>";
+        minutes.innerHTML = m + "<br><span>Minutes</span>";
+        seconds.innerHTML = s + "<br><span>Secondes</span>";
+
+        // Animer le tracé de la ligne
+        dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+        // Il y a 365 jours dans une année
+        hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+        // Il y a 24 heures dans une journée
+        mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+        // Il y a 60 minutes dans une heure
+        ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+        // Il y a 60 secondes dans une minute
+        // Animer les points du cercle
+        day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
+        // 360deg / 365 jours = 0.986
+        hr_dot.style.transform = `rotateZ(${h * 15}deg`;
+        // 360deg / 24 heures = 15
+        min_dot.style.transform = `rotateZ(${m * 6}deg`;
+        // 360deg / 60 minutes = 6
+        sec_dot.style.transform = `rotateZ(${s * 6}deg`;
+        // 360deg / 60 secondes = 6
+        // le compte à rebours est terminé
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("time").style.display =
+                  'none';
+        }
+      })
+    </script>
+  </div>
+  <a href="index.html">Retourner à la page d'Accueil</a>
+</div>
+</body>
+</html>
+

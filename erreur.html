@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site de la communauté de Morlaix">
+        <meta name="author" content="Damien Eloïse Lucas Samy">
+        <!-- Pour adapter sur téléphone -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Erreur</title><link rel="Icon" href="image/logo_morlaix-coupe.png"/>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/Erreur.css">
+        <script rel="text/javascript" src="js/btn.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-green">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo" src="image/logo_morlaix-coupe.png" alt="Logo de la communauté">
+                        <span class="text-white ml-2">Morlaix Communauté</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Page_en_construction.html">La Communauté</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Page_en_construction.html">Domaines d'actions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Page_en_construction.html">Les grands projets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Page_en_construction.html">Les équipements</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+
+                            <input class="form-control me-2" type="search" id="search" placeholder="Rechercher"
+                                   onchange="ouvrirPage()" aria-label="Search">
+
+                            <input class="btn btn-outline-success bg-white text-black" type="button" id="button"
+                                   onclick="ouvrirPage()" value="OK">
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="erreur">
+            <h2>Oops! La page n'a pas été trouvée</h2>
+            <h1>404</h1>
+            <a href="index.html">Retourner à la page d'Accueil</a>
+        </div>
+
+    </body>
+
+</html>
+
